@@ -1,0 +1,27 @@
+{
+  "name": "full-stack-ecommerce",
+  "version": "1.0.0",
+  "description": "An industry-inspired full stack e-commerce web application for internships.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1"
+  },
+  "keywords": [
+    "ecommerce",
+    "full-stack",
+    "express",
+    "mongodb",
+    "vanilla-js"
+  ],
+  "author": "Internship Project",
+  "license": "MIT"
+}

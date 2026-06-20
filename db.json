@@ -1,0 +1,325 @@
+{
+  "users": [
+    {
+      "_id": "json-user-admin",
+      "name": "E-commerce Admin",
+      "email": "admin@ecommerce.com",
+      "password": "$2a$10$giDdt6PXf5JC8lZknYdFouesah.wxkifDFmT8qceXv.Nm/G3eeCFa",
+      "role": "admin"
+    },
+    {
+      "_id": "json-user-buyer",
+      "name": "John Customer",
+      "email": "buyer@ecommerce.com",
+      "password": "$2a$10$dt9JXMQSw56mCuI5wVyYMuzsgLS5.0aoMCh34asCkCJ0uNYcF9q.K",
+      "role": "user"
+    },
+    {
+      "_id": "json-user-1780756064725",
+      "name": "Praveen",
+      "email": "vedhapraveen1988@gmail.com",
+      "password": "$2a$10$fdavcHhB5VJEj5Qgl81cuusjLRpXlUhYzx8n1URn8GdNYe5L8K/xq",
+      "role": "user",
+      "createdAt": "2026-06-06T14:27:44.834Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "json-prod-1",
+      "name": "TechPro Over-Ear Headphones",
+      "description": "Experience studio-quality sound with active noise-cancellation (ANC), 40-hour battery life, and ultra-comfortable memory foam earcups.",
+      "price": 199.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "category": "Electronics",
+      "stock": 15
+    },
+    {
+      "_id": "json-prod-2",
+      "name": "SmartFit Pro Fitness Tracker",
+      "description": "Track your heart rate, sleep quality, daily steps, and workouts with this water-resistant smartwatch featuring a high-definition AMOLED screen.",
+      "price": 89.5,
+      "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500&q=80",
+      "category": "Electronics",
+      "stock": 25
+    },
+    {
+      "_id": "json-prod-3",
+      "name": "Ultima Mechanical Keyboard",
+      "description": "Anodized aluminum frame, hot-swappable brown tactile switches, and vibrant customizable RGB backlighting for developers and gamers alike.",
+      "price": 129.99,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80",
+      "category": "Electronics",
+      "stock": 10
+    },
+    {
+      "_id": "json-prod-4",
+      "name": "Curved IPS Gaming Monitor 27\"",
+      "description": "Immersive 1500R curvature, QHD resolution (2560x1440), lightning-fast 165Hz refresh rate, and 1ms response time with AMD FreeSync technology.",
+      "price": 349.99,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&q=80",
+      "category": "Electronics",
+      "stock": 8
+    },
+    {
+      "_id": "json-prod-5",
+      "name": "Ergonomic Wireless Mouse",
+      "description": "Designed to fit comfortably in your palm, featuring adjustable DPI levels, dual wireless modes (Bluetooth + 2.4GHz), and silent-click buttons.",
+      "price": 49.99,
+      "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&q=80",
+      "category": "Electronics",
+      "stock": 40
+    },
+    {
+      "_id": "json-prod-6",
+      "name": "Men's Explorer Bomber Jacket",
+      "description": "Water-resistant, insulated shell jacket inspired by flight deck designs. Perfect for cool-weather styling and outdoor excursions.",
+      "price": 79.99,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80",
+      "category": "Apparel",
+      "stock": 20
+    },
+    {
+      "_id": "json-prod-7",
+      "name": "Women's Comfort Knit Sweater",
+      "description": "Woven with a premium cashmere blend, this oversized cable-knit crewneck sweater offers exceptional warmth and luxury comfort.",
+      "price": 59.99,
+      "image": "https://images.unsplash.com/photo-1574164904299-3a102b110380?w=500&q=80",
+      "category": "Apparel",
+      "stock": 18
+    },
+    {
+      "_id": "json-prod-8",
+      "name": "Vintage Leather Messenger Bag",
+      "description": "Handcrafted genuine leather messenger bag with dedicated 15.6-inch laptop pocket, antique brass hardware, and adjustable shoulder straps.",
+      "price": 110,
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80",
+      "category": "Apparel",
+      "stock": 12
+    },
+    {
+      "_id": "json-prod-9",
+      "name": "Breathable Running Sneakers",
+      "description": "Engineered mesh upper, impact-absorbing foam midsole, and durable rubber traction outsoles for jogging, running, and heavy gym training.",
+      "price": 95,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+      "category": "Apparel",
+      "stock": 30
+    },
+    {
+      "_id": "json-prod-10",
+      "name": "Premium Bamboo Sheet Set",
+      "description": "Silky smooth, hypoallergenic, temperature-regulating bamboo viscose sheets. Set includes 1 flat sheet, 1 fitted sheet, and 2 pillowcases.",
+      "price": 65,
+      "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&q=80",
+      "category": "Home & Kitchen",
+      "stock": 15
+    },
+    {
+      "_id": "json-prod-11",
+      "name": "Electric Stainless Steel Kettle",
+      "description": "Boil water in minutes with this 1500W rapid-heating cordless kettle. Features auto-shutoff and boil-dry safety protection.",
+      "price": 39.99,
+      "image": "https://images.unsplash.com/photo-1594213112796-54a4ecd8d329?w=500&q=80",
+      "category": "Home & Kitchen",
+      "stock": 22
+    },
+    {
+      "_id": "json-prod-12",
+      "name": "12-Cup Programmable Coffee Maker",
+      "description": "Wake up to freshly brewed coffee with this 24-hour programmable brewer featuring a glass carafe and customizable brew strength selector.",
+      "price": 79.99,
+      "image": "https://images.unsplash.com/photo-1517256064527-09c53b2d0bc6?w=500&q=80",
+      "category": "Home & Kitchen",
+      "stock": 14
+    },
+    {
+      "_id": "json-prod-13",
+      "name": "Double-Wall Vacuum Water Bottle",
+      "description": "Insulated stainless steel sports bottle. Keeps cold drinks ice-cold for 24 hours, and warm drinks piping-hot for up to 12 hours.",
+      "price": 24.99,
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&q=80",
+      "category": "Home & Kitchen",
+      "stock": 50
+    },
+    {
+      "_id": "json-prod-14",
+      "name": "Pre-Seasoned Cast Iron Skillet",
+      "description": "Heavy-duty 12-inch cast iron skillet that offers lifetime durability and unmatched heat retention for searing, baking, and frying.",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=500&q=80",
+      "category": "Home & Kitchen",
+      "stock": 10
+    },
+    {
+      "_id": "json-prod-15",
+      "name": "Hex Dumbbells Pair (15 lbs)",
+      "description": "Solid cast iron dumbbells coated in protective hex-shaped black rubber to prevent rolling and protect floor surfaces from scratching.",
+      "price": 45,
+      "image": "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?w=500&q=80",
+      "category": "Sports & Fitness",
+      "stock": 16
+    },
+    {
+      "_id": "json-prod-16",
+      "name": "Eco-Friendly Pro Yoga Mat",
+      "description": "Made from non-toxic biodegradable TPE material, featuring a double-sided non-slip texture and 6mm thickness for joint cushioning.",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500&q=80",
+      "category": "Sports & Fitness",
+      "stock": 35
+    },
+    {
+      "_id": "json-prod-17",
+      "name": "4-Person Waterproof Camping Tent",
+      "description": "Easy 10-minute setup with pre-attached poles, waterproof rainfly cover, and ventilation screen windows for a cozy outdoor shelter.",
+      "price": 149.99,
+      "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500&q=80",
+      "category": "Sports & Fitness",
+      "stock": 6
+    },
+    {
+      "_id": "json-prod-18",
+      "name": "Gourmet Cooking Masterclass",
+      "description": "A beautiful hardcover book with over 150 culinary recipes, cooking techniques, and plating presentations from Michelin-star chefs.",
+      "price": 32.5,
+      "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=500&q=80",
+      "category": "Books",
+      "stock": 25
+    },
+    {
+      "_id": "json-prod-19",
+      "name": "The Chronicles of Nebula Sci-Fi Novel",
+      "description": "A gripping space opera paperback story detailing galactic diplomacy, rebellion, and exploration at the edge of the universe.",
+      "price": 14.99,
+      "image": "https://images.unsplash.com/photo-1478720143022-385f704a3e79?w=500&q=80",
+      "category": "Books",
+      "stock": 50
+    },
+    {
+      "_id": "json-prod-20",
+      "name": "Productive Habits Guidebook",
+      "description": "Learn step-by-step psychological strategies to break bad habits, build life-changing positive routines, and maximize your daily focus.",
+      "price": 18.99,
+      "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=500&q=80",
+      "category": "Books",
+      "stock": 45
+    },
+    {
+      "_id": "json-prod-21",
+      "name": "Leather Explorer Boots",
+      "description": "Handcrafted premium leather boots with storm welt construction, heavy traction rubber soles, and padded calf collars.",
+      "price": 140,
+      "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=500&q=80",
+      "category": "Footwear",
+      "stock": 15
+    },
+    {
+      "_id": "json-prod-22",
+      "name": "SwiftRun Elite Trainers",
+      "description": "High-performance running shoes with breathable mesh panels, responsive carbon fiber midsole plates, and speed laces.",
+      "price": 110,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+      "category": "Footwear",
+      "stock": 22
+    },
+    {
+      "_id": "json-prod-23",
+      "name": "Cozy Fleece Slippers",
+      "description": "Slip into warmth with these fleece-lined house slippers featuring high-density memory foam insoles and slip-resistant grip pads.",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=500&q=80",
+      "category": "Footwear",
+      "stock": 45
+    },
+    {
+      "_id": "json-prod-24",
+      "name": "HydraGlow Facial Moisturizer",
+      "description": "Deep hydration cream infused with hyaluronic acid, ceramides, and vitamin E to restore skin elasticity and natural brightness.",
+      "price": 35,
+      "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&q=80",
+      "category": "Beauty & Personal Care",
+      "stock": 30
+    },
+    {
+      "_id": "json-prod-25",
+      "name": "Organic Rosewater Toner",
+      "description": "100% pure steam-distilled rosewater spray. Clarifies skin pores, hydrates facial cells, and balances skin pH values.",
+      "price": 19.99,
+      "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=500&q=80",
+      "category": "Beauty & Personal Care",
+      "stock": 50
+    },
+    {
+      "_id": "json-prod-26",
+      "name": "Ionic Hair Dryer & Styler",
+      "description": "1875W professional blow dryer with advanced negative ion tech to eliminate frizz, featuring concentrator and diffuser accessories.",
+      "price": 89.99,
+      "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80",
+      "category": "Beauty & Personal Care",
+      "stock": 18
+    },
+    {
+      "_id": "json-prod-27",
+      "name": "HydroGel Reviving Eye Patches",
+      "description": "Cooling cucumber and caffeine hydrogel patches designed to visibly reduce under-eye puffiness and dark circles in 10 minutes.",
+      "price": 24.99,
+      "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80",
+      "category": "Beauty & Personal Care",
+      "stock": 35
+    },
+    {
+      "_id": "json-prod-28",
+      "name": "AeroDrone GPS Quadcopter",
+      "description": "4K UHD camera drone featuring GPS return-home, headless lock navigation, altitude hold mode, and a 25-minute single battery flight capacity.",
+      "price": 249.99,
+      "image": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=500&q=80",
+      "category": "Toys & Hobbies",
+      "stock": 8
+    },
+    {
+      "_id": "json-prod-29",
+      "name": "Catan Strategy Board Game",
+      "description": "Classic civilization-building trade board game. Collect resources, build settlements, roads, and secure victory points (3-4 players).",
+      "price": 49.99,
+      "image": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&q=80",
+      "category": "Toys & Hobbies",
+      "stock": 20
+    },
+    {
+      "_id": "json-prod-30",
+      "name": "Pro Airbrush Painting Kit",
+      "description": "Complete multi-purpose airbrush kit with mini air compressor, dual-action airbrush gun, and 12 primary acrylic paint tubes.",
+      "price": 75,
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "category": "Toys & Hobbies",
+      "stock": 12
+    }
+  ],
+  "orders": [
+    {
+      "_id": "json-order-seed-1",
+      "user": "json-user-buyer",
+      "orderItems": [
+        {
+          "name": "TechPro Over-Ear Headphones",
+          "qty": 1,
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+          "price": 199.99,
+          "product": "json-prod-1"
+        }
+      ],
+      "shippingAddress": {
+        "address": "102 Innovation Way",
+        "city": "Silicon Valley",
+        "postalCode": "94016",
+        "country": "United States"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "taxPrice": 30,
+      "shippingPrice": 10,
+      "totalPrice": 239.99,
+      "status": "Pending",
+      "createdAt": "2026-06-06T14:25:26.079Z"
+    }
+  ]
+}
