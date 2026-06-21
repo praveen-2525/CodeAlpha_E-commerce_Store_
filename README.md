@@ -2,37 +2,41 @@
 
 ## Overview
 
-The E-Commerce Store is a web-based application that enables customers to browse, search, and purchase products online. The platform provides a seamless shopping experience with features such as product management, shopping cart functionality, secure user authentication, order tracking, and online payments. It is designed to simplify online shopping for customers while providing administrators with tools to manage products, inventory, and orders efficiently.
+The E-Commerce Store is a full-stack web application that allows customers to browse products, add items to a shopping cart, place orders, and make secure online payments. The platform provides a seamless shopping experience while enabling administrators to manage products, categories, inventory, and customer orders efficiently.
+
+---
 
 ## Features
 
 ### Customer Features
 
-* User registration and login
-* Product browsing and searching
-* Product filtering and categorization
-* Shopping cart management
-* Wishlist functionality
-* Secure checkout process
-* Online payment integration
-* Order tracking and history
-* Product reviews and ratings
+* User Registration and Login
+* Product Browsing and Search
+* Product Categories and Filters
+* Shopping Cart Management
+* Wishlist Functionality
+* Secure Checkout
+* Online Payment Integration
+* Order Tracking and History
+* Product Reviews and Ratings
 
 ### Admin Features
 
-* Product management (Add, Edit, Delete)
-* Category management
-* Inventory management
-* Order management
-* Customer management
-* Sales and revenue tracking
+* Product Management (Add, Edit, Delete)
+* Category Management
+* Inventory Management
+* Order Management
+* Customer Management
+* Sales Reports and Analytics
 
 ### Security Features
 
-* JWT-based authentication
-* Password encryption using Bcrypt
-* Secure payment processing
-* Role-based access control
+* JWT Authentication
+* Password Encryption using Bcrypt
+* Role-Based Access Control
+* Secure Payment Processing
+
+---
 
 ## Technologies Used
 
@@ -59,93 +63,227 @@ The E-Commerce Store is a web-based application that enables customers to browse
 
 ### Authentication
 
-* JWT (JSON Web Tokens)
+* JWT
 * Bcrypt
 
-## System Architecture
+---
 
-The application follows a client-server architecture:
+## Program Structure
 
-1. Users interact with the frontend interface.
-2. The frontend communicates with the backend through REST APIs.
-3. The backend processes requests and manages business logic.
-4. MongoDB stores product, customer, and order information.
-5. Payment gateways handle secure online transactions.
+```text
+ecommerce-store/
+│
+├── client/                         # Frontend Application
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.js
+│   │   │   ├── ProductCard.js
+│   │   │   ├── CartItem.js
+│   │   │   ├── CheckoutForm.js
+│   │   │   └── Footer.js
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.js
+│   │   │   ├── ProductDetails.js
+│   │   │   ├── Cart.js
+│   │   │   ├── Checkout.js
+│   │   │   ├── Login.js
+│   │   │   ├── Register.js
+│   │   │   └── Orders.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   ├── authService.js
+│   │   │   └── productService.js
+│   │   │
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   └── package.json
+│
+├── server/                         # Backend Application
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── productController.js
+│   │   ├── cartController.js
+│   │   ├── orderController.js
+│   │   └── userController.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   ├── Cart.js
+│   │   ├── Order.js
+│   │   └── Category.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── cartRoutes.js
+│   │   ├── orderRoutes.js
+│   │   └── userRoutes.js
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── payments/
+│   │   └── paymentGateway.js
+│   │
+│   ├── server.js
+│   └── package.json
+│
+├── .env
+├── README.md
+└── package.json
+```
+
+---
 
 ## Installation
 
 ### Prerequisites
 
-* Node.js (v16 or above)
+* Node.js (v16+)
 * MongoDB
 * Git
 
-### Steps
-
-1. Clone the repository:
+### Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/ecommerce-store.git
-```
-
-2. Navigate to the project directory:
-
-```bash
 cd ecommerce-store
 ```
 
-3. Install dependencies:
+### Install Dependencies
 
 ```bash
 npm install
+cd client
+npm install
 ```
 
-4. Configure environment variables:
+### Environment Variables
+
+Create a `.env` file in the server directory:
 
 ```env
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PAYMENT_API_KEY=your_payment_gateway_key
 ```
 
-5. Start the backend server:
+### Run Backend
 
 ```bash
 npm run server
 ```
 
-6. Start the frontend application:
+### Run Frontend
 
 ```bash
 npm start
 ```
 
-## Usage
+---
 
-1. Register or log in to the platform.
-2. Browse and search for products.
-3. Add products to the shopping cart or wishlist.
-4. Proceed to checkout and complete payment.
-5. Track orders and view purchase history.
-6. Administrators can manage products, inventory, and customer orders through the admin dashboard.
+## Database Collections
+
+### Users
+
+```json
+{
+  "_id": "ObjectId",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "hashed_password",
+  "role": "customer"
+}
+```
+
+### Products
+
+```json
+{
+  "_id": "ObjectId",
+  "name": "Wireless Headphones",
+  "description": "Noise-cancelling headphones",
+  "price": 2999,
+  "category": "Electronics",
+  "stock": 50,
+  "image": "product_image_url"
+}
+```
+
+### Orders
+
+```json
+{
+  "_id": "ObjectId",
+  "userId": "ObjectId",
+  "items": [],
+  "totalAmount": 5998,
+  "status": "Delivered",
+  "createdAt": "Date"
+}
+```
+
+### Cart
+
+```json
+{
+  "_id": "ObjectId",
+  "userId": "ObjectId",
+  "products": [],
+  "totalPrice": 2999
+}
+```
+
+---
+
+## API Endpoints
+
+### Authentication
+
+* `POST /api/auth/register`
+* `POST /api/auth/login`
+
+### Products
+
+* `GET /api/products`
+* `GET /api/products/:id`
+* `POST /api/products`
+* `PUT /api/products/:id`
+* `DELETE /api/products/:id`
+
+### Cart
+
+* `GET /api/cart`
+* `POST /api/cart/add`
+* `DELETE /api/cart/remove/:id`
+
+### Orders
+
+* `POST /api/orders`
+* `GET /api/orders`
+* `GET /api/orders/:id`
+
+---
 
 ## Future Enhancements
 
-* AI-based product recommendations
-* Multi-vendor marketplace support
-* Advanced analytics dashboard
-* Social media login integration
-* Mobile application support
-* Coupon and discount management
-* Live chat customer support
+* AI-Based Product Recommendations
+* Multi-Vendor Marketplace
+* Coupon and Discount System
+* Live Chat Support
+* Mobile Application
+* Product Recommendation Engine
+* Advanced Sales Analytics
+* Social Media Login Integration
 
-## Benefits
-
-* Convenient online shopping experience
-* Secure and reliable transactions
-* Efficient inventory and order management
-* Improved customer engagement
-* Scalable and user-friendly architecture
-
-The E-Commerce Store provides a complete online shopping solution by integrating product management, secure authentication, shopping cart functionality, payment processing, and order tracking. Built using modern web technologies, the platform delivers a secure, scalable, and user-friendly experience for both customers and administrators.
+The E-Commerce Store is a scalable and secure online shopping platform that provides essential e-commerce functionalities such as product management, cart operations, order processing, and payment integration. Its modular architecture and organized program structure make it easy to maintain, enhance, and deploy, making it suitable for businesses of all sizes.
